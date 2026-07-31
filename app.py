@@ -8,8 +8,9 @@ from PIL import Image
 # Create models folder
 os.makedirs("models", exist_ok=True)
 
-MODEL_PATH = "models/skin_classifier.keras"
-MODEL_URL = "https://github.com/successokon-code/CE13_Tinea_Candidiasis_Classifier/releases/download/v1.0.0/skin_classifier.keras"
+MODEL_PATH = "models/tomato_classifier.keras"
+
+MODEL_URL = "https://github.com/agape155/CE6_Tomato_Disease_Classifier/releases/download/v1.0.0/tomato_classifier.keras"
 
 # Download model if missing
 if (not os.path.exists(MODEL_PATH)) or os.path.getsize(MODEL_PATH) < 1000000:
@@ -23,21 +24,21 @@ if (not os.path.exists(MODEL_PATH)) or os.path.getsize(MODEL_PATH) < 1000000:
 model = tf.keras.models.load_model(MODEL_PATH)
 
 # Class names
-classes = ["Candidiasis", "Tinea"]
+classes = ["Tomato Bacterial Spot", "Tomato Target Spot"]
 
-st.title("CE13 Skin Disease Classifier")
+st.title("CE6 Tomato Disease Classifier")
 
 st.write("""
-## Skin Disease Classification Using MobileNetV2
+## Tomato Disease Classification Using MobileNetV2
 
-Upload a skin image and the trained CNN model will classify it as:
+Upload a tomato leaf image and the trained CNN model will classify it as:
 
-- Candidiasis
-- Tinea
+- Tomato Bacterial Spot
+- Tomato Target Spot
 """)
 
 uploaded_file = st.file_uploader(
-    "Upload Skin Image",
+    "Upload Tomato Leaf Image",
     type=["jpg", "jpeg", "png"]
 )
 
@@ -57,8 +58,8 @@ if uploaded_file is not None:
     confidence = float(prediction[0][0])
 
     if confidence >= 0.5:
-        st.success("Prediction: Tinea")
+        st.success("Prediction: Tomato Target Spot")
         st.write(f"Confidence: {confidence * 100:.2f}%")
     else:
-        st.success("Prediction: Candidiasis")
+        st.success("Prediction: Tomato Bacterial Spot")
         st.write(f"Confidence: {(1 - confidence) * 100:.2f}%")

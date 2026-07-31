@@ -1,7 +1,7 @@
 ---
-title: CE13 Skin Disease Classifier
-emoji: 🩺
-colorFrom: blue
+title: CE6 Tomato Disease Classifier
+emoji: 🍅
+colorFrom: red
 colorTo: green
 sdk: streamlit
 sdk_version: 1.60.0
@@ -9,31 +9,31 @@ app_file: app.py
 pinned: false
 ---
 
-# CE13 Skin Disease Classifier Using CNN
+# CE6 Tomato Disease Classifier Using CNN
 
-## CE13 Mini Project
+## CE6 Mini Project
 
-This project uses a Convolutional Neural Network (CNN) based on **MobileNetV2** to classify skin disease images into two categories:
+This project uses a Convolutional Neural Network (CNN) based on **MobileNetV2** to classify tomato leaf images into two disease categories:
 
-- Candidiasis
-- Tinea
+- Tomato Bacterial Spot
+- Tomato Target Spot
 
 ## Dataset
 
 The dataset contains:
 
-- Training Images: **1,063**
-- Testing Images: **129**
+- Training Images: **4,653**
+- Testing Images: **1,191**
 
-**Total Images:** **1,192**
+**Total Images:** **5,844**
 
 The dataset was obtained from Kaggle and organized into separate training and testing folders.
 
 ## Model Performance
 
-- Training Accuracy: **93.89%**
-- Validation Accuracy: **89.15%**
-- Validation Loss: **0.2935**
+- Training Accuracy: **99.13%**
+- Test Accuracy: **99.58%**
+- Test Loss: **0.0111**
 
 ## Technologies Used
 
@@ -59,19 +59,19 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-3. Upload a skin disease image.
+3. Upload a tomato leaf image.
 
-4. The application predicts whether the image is:
+4. The application predicts whether the leaf image is:
 
-- Candidiasis
-- Tinea
+- Tomato Bacterial Spot
+- Tomato Target Spot
 
 and displays the prediction confidence.
 
 ## GitHub Repository
 
-https://github.com/kingenchanted40-code/CE13_Tinea_Candidiasis_Classifier
+https://github.com/agape155/CE6_Tomato_Disease_Classifier
 
 ## Author
 
-**ISUO, BENEDICT EDET**
+**AGAPE DONALD**
