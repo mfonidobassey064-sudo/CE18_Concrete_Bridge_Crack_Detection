@@ -17,7 +17,7 @@ MODEL_PATH = "models/concrete_bridge_crack_classifier.keras"
 
 
 # GitHub Release model URL
-MODEL_URL = "YOUR_GITHUB_RELEASE_LINK_HERE"
+MODEL_URL = "https://github.com/mfonidobassey064-sudo/CE18_Concrete_Bridge_Crack_Detection/releases/download/v1.0.0/concrete_bridge_crack_classifier.keras"
 
 
 # Download model if it does not exist
