@@ -1,2 +1,2 @@
 *.keras filter=lfs diff=lfs merge=lfs -text
-models/tomato_classifier.keras filter=lfs diff=lfs merge=lfs -text
+models/concrete_bridge_crack_classifier.keras filter=lfs diff=lfs merge=lfs -text
