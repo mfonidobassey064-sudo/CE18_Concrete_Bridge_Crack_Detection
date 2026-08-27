@@ -70,10 +70,15 @@ GitHub Repository
 
 https://github.com/mfonidobassey064-sudo/CE18_Concrete_Bridge_Crack_Detection
 
+MEMBERS/ROLE 
 
-BASSEY, MFONIDO RANSOM
+1. BASSEY, MFONIDO RANSOM
 22/EG/CE/1356
 Role: Leader / Model Developer
+
+2.ASANG INIMFON IBANGA
+Registration Number: 22/EG/EE/2066
+Role: Dataset Preparation / Streamlit Application and Deployment
 
 Author
 BASSEY, MFONIDO RANSOM
